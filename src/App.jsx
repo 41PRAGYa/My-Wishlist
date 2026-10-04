@@ -19,7 +19,7 @@ function App() {
     }
 
     const onToDoCheckboxChange = (id) => {
-        const updatedToDoList = todoList.map(todo => todo.id === id ? { ...todo, isCompleted: !todo.ischecked} : todo );
+        const updatedToDoList = todoList.map(todo => todo.id === id ? { ...todo, isCompleted: !todo.isCompleted} : todo );
         setToDoList(updatedToDoList);
     }
 
